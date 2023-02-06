@@ -97,3 +97,24 @@ Inserting Data into DataBase
         res.send({message:'product created '})
 
     })
+
+## Handling Asynchronus Errors
+
+### Using try catch
+
+    try{
+
+    }
+    catch(err){
+        next(err)
+    }
+
+### Using express-async-handler module
+
+    npm install express-async-handler
+
+    const expressAsyncHandler=require('express-async-handler)
+
+    app.post('path',expressAsyncHandler(async (req,res)=>{
+
+    }))

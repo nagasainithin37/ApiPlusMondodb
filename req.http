@@ -3,7 +3,7 @@ GET  http://localhost:3000/users/getusers
 
 
 ### 
-GET http://localhost:3000/users/getuser/3
+GET http://localhost:3000/users/getuser/4
 
 
 ### POST
@@ -11,8 +11,8 @@ POST http://localhost:3000/users/createuser
 Content-Type: application/json
 
 {
-    "id":"3",
-    "name":"vomann"
+    "id":"2",
+    "name":"Rishi"
 }
 
 ###
@@ -20,8 +20,8 @@ PUT http://localhost:3000/users/updateuser
 Content-Type: application/json
 
 {
-    "id":"3",
-    "name":"vomann.T"
+    "id":"2",
+    "name":"Rishi.T"
 }
 
 ###

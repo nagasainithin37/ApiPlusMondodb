@@ -19,5 +19,16 @@ const userApp=require('./userApi')
 
 app.use('/users',userApp)
 
+//Handle invalid Paths
+app.use((req,res,next)=>{
+    res.send({message:`Invalid path ${req.url}`})
+})
+
+//Handling errors
+
+app.use((err,req,res,next)=>{
+    res.send({message:`error occured ${err.message}`})
+})
+
 
 app.listen(3000,()=>console.log("Server is Listining"))
